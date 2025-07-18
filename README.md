@@ -1,13 +1,54 @@
-The project is an Airport Management System GUI application using Python Tkinter. 
-It enables users to input and manage passenger and flight information, storing data in a MySQL database. 
-The program includes features such as adding, deleting, and displaying passenger and flight records. 
-It also has a dedicated section for employee information with its own window. 
-The project involves various interconnected tables in the database.
-The program uses the MySQL connector to interact with a MySQL database and handles exceptions for error handling. 
-Overall, it's a comprehensive application for managing airport-related information with a graphical user interface.
-There are some issues in the deletion part, and they will be resolved soon.
+# Airport Management System
 
-To install the MySQL Connector for Python, you can use the mysql-connector-python package. You can install it using the following command:
-pip install mysql-connector-python
-There are 14 Tables which are interconnected using the SQL.
-Keep the data types consistent between the values you entered in the GUI and the corresponding data types in the SQL code.
+![Screenshot](screenshot.png)
+
+## Overview
+The **Airport Management System** is a Python-based desktop application with a graphical user interface (GUI) built using Tkinter. It allows users to manage passenger and flight information, ticketing, and employee records, all integrated with a MySQL database backend.
+
+## Features
+- Add, view, and delete passenger records
+- Manage flight details and ticket bookings
+- Employee information management
+- Data stored and retrieved from a MySQL database
+- User-friendly GUI for efficient workflow
+
+## Prerequisites
+- Python 3.x
+- MySQL Server
+- MySQL Connector for Python
+- Tkinter (comes with standard Python installation)
+
+## Setup Instructions
+1. **Clone or Download the Repository**
+2. **Install Required Python Packages:**
+   ```sh
+   pip install mysql-connector-python
+   ```
+3. **Set Up the MySQL Database:**
+   - Start your MySQL server.
+   - Create a database named `airport_management`.
+   - Import the SQL files from the `SQL/` directory to create the necessary tables and sample data.
+   - Example using MySQL Workbench:
+     - Open each `.sql` file and execute it on the `airport_management` schema.
+4. **Configure Database Credentials:**
+   - Ensure your MySQL username and password in `airport_management.py` match your local setup.
+5. **Run the Application:**
+   ```sh
+   python airport_management.py
+   ```
+
+## Usage
+- Use the GUI to add, update, or delete passenger and flight records.
+- The Employee Page allows management of employee data.
+- All data is stored in the MySQL database for persistence.
+
+## Screenshots
+
+### Main Application Window
+![Application Screenshot](screenshot.png)
+
+### Employee Information Window
+![Employee Information Screenshot](employee_screenshot.png)
+
+## License
+This project is for educational purposes.
